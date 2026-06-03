@@ -12,22 +12,22 @@ public class Item {
     public private(set) var price: Double
     public private(set) var category: String
     public var qty: Int
-    public var imageName: String
+    //public var imageName: String
 
     public init() {
         self.name = ""
         self.price = 0.0
         self.category = ""
         self.qty = 0
-        self.imageName = ""
+        //self.imageName = ""
     }
 
-    public init(name: String, price: Double, category: String, qty: Int, imageName: String) {
+    public init(name: String, price: Double, category: String, qty: Int, /*imageName: String*/) {
         self.name = name
         self.price = price
         self.category = category
         self.qty = qty
-        self.imageName = imageName
+        //self.imageName = imageName
     }
 
     public func toString() -> String {
