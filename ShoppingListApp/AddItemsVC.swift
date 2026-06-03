@@ -99,6 +99,11 @@ class AddItemsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
         //        priceTF.keyboardType = .decimalPad
 
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.backgroundColor = Colour.sharedInstance.selectedColour
+    }
 
     @IBAction func addClicked(_ sender: UIButton) {
         guard let itemName = ItemNameTF.text, !itemName.isEmpty else {

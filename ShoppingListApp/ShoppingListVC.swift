@@ -21,6 +21,7 @@ class ShoppingListVC: UIViewController, UITableViewDelegate,
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         itemTable.reloadData()
+        self.view.backgroundColor = Colour.sharedInstance.selectedColour
     }
 
     override func viewDidLoad() {
